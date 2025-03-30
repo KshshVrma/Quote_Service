@@ -9,6 +9,7 @@ import java.util.ArrayList;
 
 @RestController
 @RequestMapping("/quote")
+@CrossOrigin(origins = "http://localhost:63342")
 public class GeneratorController {
     ArrayList<Quote> quotes = new ArrayList<Quote>();
     @GetMapping("/test")
